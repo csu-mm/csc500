@@ -1,6 +1,7 @@
-import sys
-
-
+# Python Program to Add and Subtract Two Numbers
+# Created by Mukul Mondal
+# Saturday, January 18th, 2025
+#
 '''
 Problem statement:
 
@@ -10,6 +11,25 @@ Write a Python program to find the multiplication and division of two numbers.
 Ask the user to input two numbers (num1 and num2). Given those two numbers, 
 multiply them together to find the output. Also, divide num1/num2 to find the output.
 '''
+#
+# The program prompts user to enter two numbers.
+# If user input is not numeric then, user get more chances to enter any valid numeric input. 
+# If both inputs are numeric then, the program shows the multiplication result.
+# If second input is non-zero numeric then, the program shows the division result.
+# If second input is 0 then, the program shows the invalid for the operation message and 
+#     user can rerun it with valid numeric input for the division operation.
+#
+# I'm using Visual Studio Code with python extension installed.
+#
+# It displays the result or message in the output window.
+#
+# I've added other important information, assumptions and comments inside the program itself.
+#
+
+import sys
+
+
+
 
 # python supports 2 numeric types: int, float.
 # Specific numeric Data types are not mentioned in the problem statement.
@@ -20,6 +40,7 @@ multiply them together to find the output. Also, divide num1/num2 to find the ou
 # Python's integer type (int) has arbitrary precision, so detecting overflow in numeric 
 # operation, normally not needed. If you think, I should provide the logic for overflow 
 # condition, then please let me know, I'll provide that logic.
+
 
 redoInput = True # We'll let user try again if incorrect input provided
 
