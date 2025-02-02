@@ -158,8 +158,8 @@ def GetCustomerBill(customerName):
         totalcost += value*menu_dict[key]
     
     # add 18 percent tip and 7 percent sales tax.
-    print("Sales Tax @7% : \t$", "%.2f" % (totalcost*0.07))
-    print("Tips: \t$", "%.2f" % (totalcost*0.18))
+    print("Sales Tax @7%: $", "%.2f" % (totalcost*0.07))
+    print("Tips:          $", "%.2f" % (totalcost*0.18))
     totalcost += (0.18+0.07)*totalcost    
     print("Total bill of ",customerName.rstrip().lstrip()," is:\t $", "%.2f" % totalcost)
     return
