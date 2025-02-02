@@ -48,10 +48,10 @@ while redoInput:
     
     try:
         # Read user inputs and validate
-        num1 = int(input('Enter your first number:\n'))     # for 'int' data types
-        num2 = int(input('Enter your second number:\n'))    # for 'int' data types
-        #num1 = float(input('Enter your first number:\n'))  # for 'float' data types
-        #num2 = float(input('Enter your second number:\n')) # for 'float' data types
+        #num1 = int(input('Enter your first number:\n'))     # for 'int' data types
+        #num2 = int(input('Enter your second number:\n'))    # for 'int' data types
+        num1 = float(input('Enter your first number:\n'))  # for 'float' data types
+        num2 = float(input('Enter your second number:\n')) # for 'float' data types
         redoInput = False
     except ValueError:
         print('Please try again with numeric inputs.')
