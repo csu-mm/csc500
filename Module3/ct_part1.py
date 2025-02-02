@@ -166,7 +166,7 @@ def GetCustomerBill(customerName):
 
 
 # Raise Bill to all customers
-def RaiseBillToAllCustomerOrders():
+def RaiseBillToAllCustomers():
     print("\n")
     while len(allCustomerOrder_dict) > 0:    
         # we've customer to pay the bill
@@ -196,7 +196,7 @@ def ct_part1():
     GetAllCustomerOrders(currentCustomertCount) 
     
     # when customer pays the bill
-    RaiseBillToAllCustomerOrders()
+    RaiseBillToAllCustomers()
 
     return
 
