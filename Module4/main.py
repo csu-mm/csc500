@@ -66,7 +66,6 @@ def CreateOneItem():
     return newItem
 
 
-
 # the main function that calls other functions and does the final work
 def module4pm_shopping_cart():
     clearScreen()
