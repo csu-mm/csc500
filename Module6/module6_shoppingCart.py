@@ -21,6 +21,7 @@ class StoreItem:
         self.Description: str = desc.lstrip().rstrip()  # Item Description
         self.Price: float = price                       # Item Price
 
+# This represents the container of all items in the store
 # This dictionary has Key as 'Item Name' and Value as 'Store item' object as defined above.
 # This should not be part of the Cart.
 # This should be a component of the Store.
@@ -67,6 +68,7 @@ class CartItem:
         self.itemPrice = 1.0                    # default itemPrice = 1.0
         self.Description = "defaultDescription" # default Descrition = "defaultDescription"
 
+# This represents the Shopping cart.
 class ShoppingCart:    
     def __init__(self):
         self.customer_name = "none"
@@ -77,14 +79,14 @@ class ShoppingCart:
         self.current_date = date.lstrip().rstrip()
         self.cart_items: List[CartItem] = []
 
-    # helper function to search item in the cart(collection of 'CartItem' objects) by ItemName
+    # helper function to search an item in the cart(collection of 'CartItem' objects) by ItemName.
     def find_item_by_name(self, name:str):
         for item in self.cart_items:
             if re.search(name, item.itemName, re.IGNORECASE):
                 return item
         return None
 
-    # Adds an item to cart_items list. Has parameter ItemToPurchase. 
+    # Adds an item to cart_items list. Has parameter ItemToPurchase.
     # To make it more user friendly, we'll assume ItemToPurchase is of type: StoreItem
     def add_item(self, ItemToPurchase: CartItem ):        
         itemToPurchaseName = ItemToPurchase.itemName.lstrip().rstrip()        
@@ -173,7 +175,7 @@ class ShoppingCart:
             print(anItem.itemName, ": ", anItem.Description)        
         return
     
-
+# Displays the menu for user action.
 def print_menu():    
     print("a - Add item to cart")
     print("r - Remove item from cart")
@@ -183,12 +185,14 @@ def print_menu():
     print("q - Quit")    
     return
 
+# Read menu selection by the user.
 def readUserSelection():
     userInput = ""
     while userInput != "arcioq" and len(userInput) != 1:
         userInput = input('Choose an option: ').lstrip().rstrip().lower()
     return userInput
 
+# Handles an Item buy by the user
 def buyOneItem():
     newItemName = input("Please enter the item name, you want to buy: ").lstrip().rstrip()
     while len(newItemName) < 1 or (newItemName in itemNameStoreItem_dict == False):
