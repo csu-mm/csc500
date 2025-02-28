@@ -41,7 +41,8 @@ dict_CourseID_MeetingTime: Dict[str,str] = {
 def module7ct():
     clearScreen()
     # user enter a CourseID
-    print(f"Valid CourseIDs are: {", ".join(list(dict_CourseID_MeetingTime.keys()))}")
+    #print(f"Valid CourseIDs are: {", ".join(list(dict_CourseID_MeetingTime.keys()))}")
+    print("Valid CourseIDs are: CSC101, CSC102, CSC103, NET110, COM241")
     inputCourseID = input("Please enter CourseID: ").lstrip().rstrip().upper()
     while (len(inputCourseID) < 1) or (inputCourseID not in dict_CourseID_MeetingTime):
         inputCourseID = input("Invalid input, try again. Enter the CourseID: ").lstrip().rstrip().upper()
