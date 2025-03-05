@@ -157,7 +157,7 @@ class ShoppingCart:
         self.current_date = date.lstrip().rstrip()
         self.cart_items: List[ItemToPurchase] = []
 
-    # helper function to search an item in the cart(collection of 'CartItem' objects) by ItemName.
+    # helper function to search an item in the cart(collection of 'ItemToPurchase' objects) by ItemName.
     def find_item_by_name(self, name: str):
         for item in self.cart_items:
             if re.search(name, item.item_name, re.IGNORECASE):
