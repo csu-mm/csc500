@@ -46,7 +46,9 @@ def module7ct():
     inputCourseID = input("Please enter CourseID: ").lstrip().rstrip().upper()
     while (len(inputCourseID) < 1) or (inputCourseID not in dict_CourseID_MeetingTime):
         inputCourseID = input("Invalid input, try again. Enter the CourseID: ").lstrip().rstrip().upper()
-    print(f"CourseID: {inputCourseID}\tRoom number: {dict_CourseID_RoomNumber[inputCourseID]}\tMeeting time: {dict_CourseID_MeetingTime[inputCourseID]}")
+  # The program should let the user enter a course number and then 
+  # it should display the course's room number, instructor, and meeting time.
+    print(f"Room number: {dict_CourseID_RoomNumber[inputCourseID]}\tInstructor: {dict_CourseID_Instructor[inputCourseID]}\tMeeting time: {dict_CourseID_MeetingTime[inputCourseID]}")
     return
 
 

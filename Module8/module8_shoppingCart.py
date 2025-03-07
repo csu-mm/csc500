@@ -74,7 +74,7 @@ class ItemToPurchase:
         self.item_name: str = "none"    # default item_name = "none"
         self.item_price: float = 0.0    # default item_price = 0.0
         self.item_quantity: int = 0     # default  item_quantity = 0
-        self.Description = ""       # this attribute mentioned in modify_item() method's requirement.
+        self.Description = ""           # this attribute mentioned in modify_item() method's requirement.
     def print_item_cost(self):
         print(f"{self.item_name} {self.item_quantity} @ ${self.item_price} = {self.item_price*self.item_quantity}")
 
