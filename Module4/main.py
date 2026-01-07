@@ -1,6 +1,12 @@
 '''
-Module 4: Portfolio Milestone:
-Online Shopping Cart
+Colorado State University Global
+( https://csuglobal.edu/academic-programs/graduate-degrees/masters-science-degree-artificial-intelligence-machine-learning )
+MS - Artificial Intelligence and Machine Learning
+Course: CSC500 - Principles of Programming
+Module 4: Portfolio Milestone: implement basic Online Shopping Cart
+Professor: Dr. Steven A. Evans
+Created by Mukul Mondal
+February 7, 2025
 
 Step 1: 
 Build the ItemToPurchase class with the following specifications:
