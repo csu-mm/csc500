@@ -1,4 +1,13 @@
 '''
+Colorado State University Global
+( https://csuglobal.edu/academic-programs/graduate-degrees/masters-science-degree-artificial-intelligence-machine-learning )
+MS - Artificial Intelligence and Machine Learning
+Course: CSC500 - Principles of Programming
+Module 3: includes Part1 and Part 3
+Professor: Dr. Steven A. Evans
+Created by Mukul Mondal
+February 5, 2025
+'''
 Part 1:
 Write a program that calculates the total amount of a meal purchased at a restaurant. 
 The program should ask the user to enter the charge for the food and then calculate 
